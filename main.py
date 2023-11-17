@@ -1,6 +1,4 @@
 import random
-population_size = int(input("Enter population size: "))
-number_of_genes = int(input("Enter number of genes: "))
 
 
 def random_ch_pull(population_size, number_of_genes):
@@ -104,6 +102,9 @@ ch_pull = random_ch_pull(population_size, number_of_genes)
 epoch = 1
 best_ch = 0
 
+
+population_size = int(input("Enter population size: "))
+number_of_genes = int(input("Enter number of genes: "))
 while best_ch != number_of_genes:
     ch_pull_sum = fitness(ch_pull)
     best_ch = fitness_check(ch_pull_sum)
